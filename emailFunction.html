@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Email Validation</title>
+<head>
+
+</head>
+<body>
+<form id="validation" action="javascript:sendEmail()">
+	<input id="email" type="email" placeholder="Email" required>
+  	<input type="submit" value="Request">
+  	<script type="text/javascript">
+
+	function sendEmail() {
+		var email = document.getElementById("email").value;
+		var test = "test@umich.edu" //Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
+		if (email == test) {
+			alert(email + " already exists. Enter new email.")
+		} else {
+	    alert("Email has been sent to " + email);
+		}
+	}
+
+  	</script>
+</form>
+
+</body>
+</html>
