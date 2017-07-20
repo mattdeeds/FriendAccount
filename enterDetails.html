@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>University of Michigan: Friend Account</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for responsive sizing -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	
-	<link rel="stylesheet" href="styles.css">
+	<title>University of Michigan: Friend Account</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--using cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
 <form>
-
-  First name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last name:<br>
-  <input type="text" name="firstname"> <input type="text" name="lastname"><br>
-  Phone Number: <br> <input type="text" name="phone"><br>
-  Password: <br> <input type="text" name="password"><br>
-  Confirm Password: <br> <input type="text" name="confirmPassword"><br>
-  <input type="submit" value="Submit">
   
-
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
 </form>
+
+<form><!-- action="/actionPage.php"  write this php file to handle form data-->
+  First name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last name:<br>
+  <input type="text" name="firstname" size="40" autofocus placeholder="First name" required> <input type="text" name="lastname" size="40" placeholder="Last name" required><br>
+  Phone Number: <br> <input type="phone" name="phone" maxlength="10" placeholder="1234567890" required><br>
+  Password: <br> <input type="password" name="password" maxlength="20" required><br>
+  Confirm Password: <br> <input type="password" name="confirmPassword" maxlength="20" required><br><br>
+  <input type="reset"><input type="submit" value="Continue"></a>  <!--Why do we put a # in the href attribute of the link?
+
+Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link in our examples. It should be a real URL to a specific page. -->
+</form>	
+
+
 
 
 
