@@ -17,24 +17,24 @@
 		$("#passWarning").hide();
 	});
 
-	function sendEmail() {
+	function checkEmailPass() {
 		var email = document.getElementById("email").value;
 		var test = "test@umich.edu" 
 		//Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
 		if (email == test) {
 			$('#warning').toggle();
 		} else {
-	    	alert("Email has been sent to " + email);
+	    	//alert("Email has been sent to " + email);
 	    	$('#warning').hide();
+		}
+		if (password != passwordConf) {
+			$('#passWarning').show();
+		} else {
+			$('#passWarning').hide(); 
 		}
 	}
 
 	function hashPass() {
-		if (password != passwordConf) {
-			$('#passWarning').toggle();
-		} else {
-			$('#passWarning').hide();
-		}
 		//send password to the server over secure encryped connection to be hashed. no client side hashing 
 	}
   	</script>
@@ -67,14 +67,15 @@
 
 	  	<div class="item active">
 	  		<div class="content">
-				<form id="validation" action="javascript:sendEmail()">
+				<form id="validation" action="javascript:checkEmailPass()">
 					<br>
 					<input id="email" type="email" placeholder="Email" required><br>
 				  	<p id="warning"> Email already exisits. Enter new eamil.</p><br>
+				
 				  	<input id="password" type="password" placeholder="Password" required><br>
 				  	<input id="passwordConf" type="password" placeholder="Confirm Password" required><br>
 				  	<p id="passWarning"> Passwords do not match. Retype passwords again.</p><br>
-				  	<input type="submit" value="Next"><br>
+				  	<input type="submit" value="Continue"><br>
 				</form>
 			</div>
 	  	</div>
@@ -91,7 +92,7 @@
 				<option>What is your pet’s name?</option>
 			  </select>
 			  <label for="usr">Answer to Question 1:</label>
-			  <input type="text" class="form-control" id="usr">
+			  <input type="text" class="form-control" id="usr" placeholder="Answer" required>
 			</div><br><br>
 
 			<div class="form-group" style="width: 100%;">
@@ -104,7 +105,7 @@
 				<option>What was your favorite sport in high school?</option>
 			  </select>
 			  <label for="usr">Answer to Question 2:</label>
-			  <input type="text" class="form-control" id="usr">
+			  <input type="text" class="form-control" id="usr" placeholder="Answer" required>
 			</div><br><br><br><br>
 
 			<div style="padding-bottom:60px">
