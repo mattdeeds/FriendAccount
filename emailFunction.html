@@ -2,71 +2,26 @@
 <html>
 <title>Email Validation</title>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--
-<script type="text/javascript">
-	$(document).ready(function () {
-		$("#warning").hide();
-		$("#passWarning").hide();
-	});
+
+</head>
+<body>
+<form id="validation" action="javascript:sendEmail()">
+	<input id="email" type="email" placeholder="Email" required>
+  	<input type="submit" value="Request">
+  	<script type="text/javascript">
 
 	function sendEmail() {
 		var email = document.getElementById("email").value;
 		var test = "test@umich.edu" //Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
 		if (email == test) {
-			$('#warning').toggle();
+			alert(email + " already exists. Enter new email.")
 		} else {
-	    	alert("Email has been sent to " + email);
-	    	$('#warning').hide();
+	    alert("Email has been sent to " + email);
 		}
 	}
 
-	function hashPass() {
-		if (password != passwordConf) {
-			$('#passWarning').toggle();
-		} else {
-			$('#passWarning').hide();
-		}
-		//send password to the server over secure encryped connection to be hashed. no client side hashing 
-	}
   	</script>
--->
-  	<style>
-  	body{
-  		background-color: #ededed;
-  	}
-  	.content {
-    max-width: 960px;
-    margin: auto;
-}
-  	</style>
-  	<div class="content">
-  		<img src="signature-informal-white.png" alt="mLogo">
-  	</div>
-</head>
-<body>
-<!--
-<div class="content">
-	<form id="validation" action="javascript:sendEmail()">
-		<br>
-		<input id="email" type="email" placeholder="Email" required>
-	  	<input type="submit" value="Request"><br>
-	  	<p id="warning"> Email already exisits. Enter new eamil.</p>
-	  	<input id="password" type="password" placeholder="Password" required><br>
-	  	<input id="passwordConf" type="password" placeholder="Confirm Password" required>
-	  	<p id="passWarning"> Passwords do not match. Retype passwords again.</p>
-	  	
-	</form>
-	<br>
-	<form id="security" aciton="javascript:hashPass()">
-		<select>
-			<option value="madienName">What is your mothers madien name?</option>
-			<option value="firstPet">What is your first pets name?</option>
-		</select><br>
-		<input id="answer" placeholder="Answer" required><br>
+</form>
 
-	</form>
-</div>
--->
 </body>
 </html>
