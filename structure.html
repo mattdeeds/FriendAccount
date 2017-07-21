@@ -10,7 +10,34 @@
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function () {
+		$("#warning").hide();
+		$("#passWarning").hide();
+	});
+
+	function sendEmail() {
+		var email = document.getElementById("email").value;
+		var test = "test@umich.edu" 
+		//Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
+		if (email == test) {
+			$('#warning').toggle();
+		} else {
+	    	alert("Email has been sent to " + email);
+	    	$('#warning').hide();
+		}
+	}
+
+	function hashPass() {
+		if (password != passwordConf) {
+			$('#passWarning').toggle();
+		} else {
+			$('#passWarning').hide();
+		}
+		//send password to the server over secure encryped connection to be hashed. no client side hashing 
+	}
+  	</script>
 </head>
 
 <body>
@@ -38,8 +65,21 @@
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" >
 
+	  	<div class="item active">
+	  		<div class="content">
+				<form id="validation" action="javascript:sendEmail()">
+					<br>
+					<input id="email" type="email" placeholder="Email" required><br>
+				  	<p id="warning"> Email already exisits. Enter new eamil.</p><br>
+				  	<input id="password" type="password" placeholder="Password" required><br>
+				  	<input id="passwordConf" type="password" placeholder="Confirm Password" required><br>
+				  	<p id="passWarning"> Passwords do not match. Retype passwords again.</p><br>
+				  	<input type="submit" value="Next"><br>
+				</form>
+			</div>
+	  	</div>
 
-		<div class="item active" >
+		<div class="item" >
 		  <form >
 			<div class="form-group" style="width: 100%;">
 			  <label for="sel1">Security Question 1:</label>
