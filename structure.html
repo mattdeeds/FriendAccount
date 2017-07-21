@@ -8,7 +8,7 @@
 
 	<title>University of Michigan: Friend Account</title>
 	<link rel="stylesheet" href="bootstrap.min.css">
-	<link rel="stylesheet" href="styles.css">  
+	<link rel="stylesheet" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -19,7 +19,7 @@
 
 	function checkEmailPass() {
 		var email = document.getElementById("email").value;
-		var test = "test@umich.edu" 
+		var test = "test@umich.edu"
 		//Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
 		if (email == test) {
 			$('#warning').toggle();
@@ -30,14 +30,14 @@
 		if (password != passwordConf) {
 			$('#passWarning').show();
 		} else {
-			$('#passWarning').hide(); 
+			$('#passWarning').hide();
 		}
 	}
 
 	function hashPass() {
-		//send password to the server over secure encryped connection to be hashed. no client side hashing 
+		//send password to the server over secure encryped connection to be hashed. no client side hashing
 	}
- 
+
 	function checkPhone() {
 		var a = document.getElementById(phoneNumber).value;
 		var filter = /^[0-9-+]+$/;
@@ -52,8 +52,8 @@
 
 <body>
 
-	<div id="head" class="container" style="background-color:navy;color:white;padding:10px;">
-		<img class="img-responsive" src="signature-informal-white.png" alt="U of M Icon" >
+	<div id="head" class="container" style="background-color:#00274c;padding:10px;">
+		<img class="img-responsive" src="weblogin.png" alt="U of M Icon" >
 	</div>
 
 	<div id="main" class="container" >
@@ -81,7 +81,7 @@
 					<br>
 					<input id="email" type="email" placeholder="Email" required><br>
 				  	<p id="warning"> Email already exisits. Enter new eamil.</p><br>
-				
+
 				  	<input id="password" type="password" placeholder="Password" required><br>
 				  	<input id="passwordConf" type="password" placeholder="Confirm Password" required><br>
 				  	<p id="passWarning"> Passwords do not match. Retype passwords again.</p><br>
@@ -146,6 +146,7 @@
 </div>
 
 </div>
+<p class="text-center" style="margin-bottom: 30px; margin-top:30px;"><small>By your use of these resources, you agree to abide by <a href="http://spg.umich.edu/policy/601.07" target="_blank">Responsible Use of Information Resources (SPG 601.07)</a>, in addition to all relevant state and federal laws.</small></p>
 </div>
 
 	</div>
