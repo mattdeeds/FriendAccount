@@ -13,13 +13,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body style="background-color: #555;">
 
 	<div id="head" class="container" style="background-color:#00274c;padding:10px;">
 		<img class="img-responsive" src="weblogin.png" alt="U of M Icon" >
 	</div>
 
-	<div id="main" class="container" style="padding-top: 20px; padding-bottom:20px;">
+	<div id="main" class="container" style="padding-top: 20px; padding-bottom:20px; background-color: white">
 	<p style="font-size:200%; text-align:center;"><b>Create a Friend Account </b></p> </br>
 
 <!--carousel start -->
@@ -27,21 +27,15 @@
 	<div id="grid" class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
 
 		<div class= "well" style= "margin: 0 auto; width: 100%; ">
-			<p>This is some text</p>
-		<div id="myCarousel" class="carousel" data-ride="false" >
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		  </ol>
+			<p class="greyed">This new acount will grant you access to a number of web
+based resources at the University of Michigan</p> <hr>
 
 		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" >
 
-			<div class="item">
-				<form><!-- action="/actionPage.php"  write this php file to handle form data-->
-				  <div class="form-group" style="width: 100%">
+
+			<!-- <div class="item">
+				<form> <!-- action="/actionPage.php"  write this php file to handle form data-->
+				<!-- <div class="form-group" style="width: 100%">
 					<label for="fName">First Name:</label>
 					<input type="text" class="form-control" id="fName" size="40" autofocus placeholder="First name" required style="margin-bottom: 15px">
 					<label for="lName">Last Name:</label>
@@ -50,7 +44,7 @@
 				  <div class="form-group">
 					<label for="phNum">Cell Phone Number:</label>
 				  <input type="text" class="form-control" id="phNum" maxlength="10" placeholder="1234567890" required> <!--add a function here which accepts only numbers in ph-num format-->
-				  </div><br><br>
+				<!--  </div><br><br>
 				  <div class="form-group">
 					<label for="pwd">Password:</label>
 					<input type="password" class="form-control" id="pwd" maxlength="20" required placeholder="*******">
@@ -62,7 +56,7 @@
 				  <button type="submit" class="btn btn-primary test">Continue</button>
 					<br><br>
 				</form>
-			</div>
+			</div> -->
 
 		<!--	<div class="item " >
 			  <form >
@@ -98,12 +92,9 @@
 			</form>
 		</div> -->
 
-		<!--	<div class="item">
-			<p style="font-size:200%;text-align: center;"><b>Create a Friend Account </b></p>
-			<div class="jumbotron" style="padding:50px;">
-				<p>This friend account will give you access to a number of web based resources at the University of Michigan.</p><br><br><br><br>
-				<p>This helps us to improve the resurces provided to you. </p>
-				<div class="form-group">
+		<div class="item">
+
+
 				  <label for="reasonList">Please select a primary reason for creating this account:</label>
 				  <select class="form-control" id="reasonList">
 					<option>1 abcd</option>
@@ -111,15 +102,19 @@
 					<option>3 abcd</option>
 					<option>4 abcd</option>
 				  </select>
-				</div>
-				<br><br><br>
-				<button type="button" class="btn btn-link">Skip<br>
-				<p>Or </p><br><br><br>
-				<button type="submit" class="btn btn-primary" >Continue</button>
+
+
+				<br>
+				<div style="text-align: center;">
+				<a class="btn btn-link" href="registration_confirmation.html" button type="submit" style="margin-right: 0px">Skip</a> <br>
+				<p>Or </p>
+			</div>
+
+				<button type="submit" class="btn btn-primary test" >Continue</button>
 
 			</div>
 			</div>
-			-->
+
 
 
 
@@ -135,14 +130,15 @@
 			<span class="sr-only">Next</span>
 			</a>
 		   -->
+			 <hr>
+
+			 <p style="text-align: center">By your use of these resources, you agree to abide by Responsible Use of Information Resources (SPG 601.07), in addition to all relevant state and federal laws.
+			</p>
 		</div>
 	<!--carousel end-->
 	</div>
 	</div>
-	<hr>
 
-	<p style="text-align: center">By your use of these resources, you agree to abide by Responsible Use of Information Resources (SPG 601.07), in addition to all relevant state and federal laws.
-</p>
 	</div>
 
 
