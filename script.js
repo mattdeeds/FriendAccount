@@ -3,7 +3,7 @@ $(document).ready(function () {
 	$("#passWarning").hide();
 });
 
-function checkEmailPass() {
+function checkEmail() {
 	var email = document.getElementById("email").value;
 	var test = "test@umich.edu"
 	//Call function here that compares email var with email already in database. Make it return a bool which is checked in if statement below
@@ -13,13 +13,15 @@ function checkEmailPass() {
     	//alert("Email has been sent to " + email);
     	$('#warning').hide();
 	}
+	
+}
+function checkPass() {
 	if (password != passwordConf) {
 		$('#passWarning').show();
 	} else {
 		$('#passWarning').hide();
 	}
 }
-
 function hashPass() {
 	//send password to the server over secure encryped connection to be hashed. no client side hashing
 }
