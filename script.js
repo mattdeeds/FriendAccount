@@ -25,7 +25,6 @@ function checkPass() {
 function hashPass() {
 	//send password to the server over secure encryped connection to be hashed. no client side hashing
 }
-
 function checkPhone() {
 	var a = document.getElementById(phoneNumber).value;
 	var filter = /^[0-9-+]+$/;
