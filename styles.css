@@ -1,3 +1,24 @@
 .test {
    margin: 0 auto; width:100%
 }
+
+.greyed {
+  color: #a8a8a8
+
+}
+
+.banner-img{
+  display: block;
+margin-left: 10px;
+background-size: 230px 40px;
+width: 230px;
+height: 40px;
+line-height: 40px;
+}
+
+.header {
+  padding: 20px;
+}
+h4 {
+	text-align: center;
+}
