@@ -22,3 +22,8 @@ line-height: 40px;
 h4 {
 	text-align: center;
 }
+
+.inlineblock {
+  display: inline-block;
+  
+}
