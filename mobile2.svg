@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="233px" viewBox="0 0 49 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-135.000000, -87.000000)">
+            <path d="M159.5,87.5 L159.5,319.5" id="Line" stroke="#DCDCDC" stroke-linecap="square"></path>
+            <circle id="Oval-1" stroke="#DCDCDC" fill="#FFFDFD" cx="159.5" cy="207.5" r="24.5"></circle>
+            <text id="OR" font-family="SourceSansPro-Semibold, Source Sans Pro" font-size="14" font-weight="500" fill="#3E6373">
+                <tspan x="151" y="213">OR</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
