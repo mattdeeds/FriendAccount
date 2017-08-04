@@ -33,7 +33,7 @@
 
                     <!-- Wrapper for slides -->
                     <div class="item">
-                        <form>
+                        <form action="registration_securityQuestions.html">
                             <!-- action="/actionPage.php"  write this php file to handle form data-->
                             <div class="form-group" style="width: 100%">
                                 <label for="fName">First Name:</label>
@@ -43,7 +43,7 @@
                             </div>
                             <br>
                             <br>
-                            <div class="form-group">
+                            <div class="form-group" action="javascript:checkPhone()">
                                 <label for="phNum">Cell Phone Number:</label>
                                 <input type="text" class="form-control inlineblock" id="phNum" maxlength="10" placeholder="1234567890" required>
                                 <!--add a function here which accepts only numbers in ph-num format-->
@@ -52,20 +52,20 @@
                             <br>
                             <div class="form-group">
                                 <label for="pwd">Password:</label>
-                                <input type="password" class="form-control inlineblock" id="pwd" maxlength="20" required placeholder="*******">
+                                <input type="password" class="form-control inlineblock" id="pwd" maxlength="20" placeholder="*******" required>
                             </div>
                             <br>
                             <br>
                             <div class="form-group">
                                 <label for="confirmPwd">Confirm Password:</label>
-                                <input type="password" class="form-control inlineblock" id="confirmPwd" maxlength="20" required placeholder="*******">
+                                <input type="password" class="form-control inlineblock" id="confirmPwd" maxlength="20" placeholder="*******" required>
                             </div>
                             <br>
                             <br>
                             <br>
                             <div style="overflow:auto;">
                                 <a class="btn" href="registration_email.html" type="submit" style="float: left; color:black "><u>Back</u></a>
-                                <a class="btn btn-primary " href="registration_securityQuestions.html" type="submit" style="float: right; margin-right:0">Continue</a>
+                                <input class="btn btn-primary" href="registration_securityQuestions.html" type="submit" value="Continue" style="float: right; margin-right:0">
                             </div>
                         </form>
                     </div>

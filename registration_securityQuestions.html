@@ -32,7 +32,7 @@
                     <hr>
 
                     <div class="item ">
-                        <form>
+                        <form action="registration_accountUse.html">
                             <div class="form-group" style="width: 100%;">
                                 <label for="sel1">Security Question 1:</label>
                                 <select class="form-control" id="sel1" style="margin-bottom: 15px">
@@ -43,7 +43,7 @@
                                     <option>What is your pet’s name?</option>
                                 </select>
                                 <label for="usr">Answer to Question 1:</label>
-                                <input type="text" class="form-control inlineblock" id="usr">
+                                <input type="text" class="form-control inlineblock" id="usr" requried>
                             </div>
                             <br>
                             <br>
@@ -57,7 +57,7 @@
                                     <option>What was your favorite sport in high school?</option>
                                 </select>
                                 <label for="usr">Answer to Question 2:</label>
-                                <input type="text" class="form-control inlineblock" id="usr2">
+                                <input type="text" class="form-control inlineblock" id="usr2" required>
                             </div>
                             <br>
                             <br>
@@ -65,7 +65,7 @@
 
                             <div style="overflow:auto;">
                                 <a class="btn" href="registration_personalInfo.html" button type="submit" style="float: left; color:black "><u>Back</u></a>
-                                <a class="btn btn-primary " href="registration_accountUse.html" button type="submit" style="float: right; margin-right:0">Continue</a>
+                                <input class="btn btn-primary" href="registration_accountUse.html" type="submit" value="Continue" style="float: right; margin-right:0">
                             </div>
 
                         </form>
