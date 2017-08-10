@@ -35,7 +35,7 @@
 
                     <!-- Wrapper for slides -->
                     <div class="item">
-                        <form action="registration_personalInfo.html">
+                        <form action="javascript:checkEmail()">
                             <!-- action="/actionPage.php"  write this php file to handle form data-->
                             <div class="row">
                                 <div class="col-sm-5" style="padding:30px;">
@@ -54,10 +54,11 @@
                                 </div>
                                 <div class="col-sm-5" style="padding:30px;">
                                     <div class="form-group" style="width: 100%">
+                                    
                                         <label for="email">Email Address:</label>
                                         <input type="email" class="form-control" id="email" size="40" autofocus placeholder="Email" style="margin-bottom: 15px" required>
-                                        <input class="btn btn-primary test" href="registration_personalInfo.html" type="submit" value="Continue">
-                                        <p id="warning">That email is already in use.</p>
+                                        <input class="btn btn-primary test" href="registration_personalInfo.html" type="submit" value="Continue" >
+                                        <p id="warning" style="text-align:center; color:red;">That email is already in use.</p>
                                     </div>
                                     <br>
                                 </div>

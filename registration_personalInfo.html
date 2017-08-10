@@ -33,7 +33,7 @@
 
                     <!-- Wrapper for slides -->
                     <div class="item">
-                        <form action="registration_securityQuestions.html">
+                        <form action="javascript:checkPass()">
                             <!-- action="/actionPage.php"  write this php file to handle form data-->
                             <div class="form-group" style="width: 100%">
                                 <label for="fName">First Name:</label>
@@ -66,6 +66,7 @@
                             <div style="overflow:auto;">
                                 <a class="btn" href="registration_email.html" type="submit" style="float: left; color:black "><u>Back</u></a>
                                 <input class="btn btn-primary" href="registration_securityQuestions.html" type="submit" value="Continue" style="float: right; margin-right:0">
+                                <p id="passWarning" style="text-align:center; color:red;">Your passwords to not match.</p>
                             </div>
                         </form>
                     </div>
